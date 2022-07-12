@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.container {
+  background-color: rebeccapurple;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 12px 32px;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  text-align: center;
+}
+
+.form h1 {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.form-in {
+  margin-bottom: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.form-in:focus {
+  outline: none;
+}
+
+.form-in::placeholder {
+  color: #aaa;
+}
+
+form textarea {
+  height: 10rem;
+}
+
+form button {
+  font-weight: bold;
+  cursor: pointer;
+  color: rebeccapurple;
+  font-size: 1.1rem !important;
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+.form small {
+  font-size: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #aaa;
+}
